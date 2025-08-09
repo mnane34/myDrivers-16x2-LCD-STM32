@@ -83,19 +83,29 @@ void LCD_InitStruct(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
 
 This function configures the required pins for a 16x2 LCD to work with the STM32 and initializes the LCD in 4-bit mode according to its datasheet.
 
+<pre><code class="language-c">
 void LCD_clear();
+</code></pre>
 
 This function sends the necessary commands to clear all characters from the LCD screen.
 
-![Shematic](images/set_cursor_function.png)
+<pre><code class="language-c">
+void LCD_setCursor(unsigned char row, unsigned char column);
+</code></pre>
 
 This function positions the LCD cursor to the specified row and column based on the LCD datasheet
 
-![Shematic](images/write_function.png)
+<pre><code class="language-c">
+void LCD_writeString(char *str);
+void LCD_writeChar(char data);
+</code></pre>
 
 These functions handle displaying text on the LCD. LCD_writeString() sends a full string character-by-character, while LCD_writeChar() sends each individual character by splitting it into high and low 4-bit parts and transmitting them with proper control signals.
 
-![Shematic](images/shift_function.png)
+<pre><code class="language-c">
+void LCD_shiftRight();
+void LCD_shiftLeft();
+</code></pre>
 
 These functions allow shifting the entire LCD display content horizontally; LCD_shiftLeft() moves the content to the left, while LCD_shiftRight() moves it to the right by sending the appropriate control commands to the LCD.
 
