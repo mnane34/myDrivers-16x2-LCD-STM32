@@ -12,15 +12,15 @@ Typically, you initialize the LCD in your code, configure it for the desired dis
 
 # 🚀 Electrical Diagram
 
-## VSS (Pin 1)
+<h4> VSS (Pin 1)
 
 Ground connection (GND). It serves as the reference voltage for the circuit.
 
-## VDD (Pin 2)
+<small> VDD (Pin 2)
 
 Power supply pin, typically connected to +5V.
 
-## VO (Pin 3)
+- VO (Pin 3)
 
 Contrast adjustment pin. Usually connected to the wiper of a potentiometer.
 
