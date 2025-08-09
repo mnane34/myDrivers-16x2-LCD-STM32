@@ -104,7 +104,7 @@ void LCD_shiftLeft();
 
 These functions allow shifting the entire LCD display content horizontally; LCD_shiftLeft() moves the content to the left, while LCD_shiftRight() moves it to the right by sending the appropriate control commands to the LCD.
 
-# 🖥️ Test Result
+# 🖥️ Test Highlights
 
 You can easily test the LCD using the following code snippet
 
