@@ -122,7 +122,7 @@ LCD_setCursor(2, 1);
 LCD_writeString("by mnane34");
 </code></pre>
 
-![Shematic](images/test.JPG)
+![test](images/test.jpg)
 
 ## 🎉 Thank You for Reviewing!
 

@@ -98,7 +98,7 @@ int main(void)
   LCD_writeString("LCD Driver v1.0");
   DELAY_MS(1);
   LCD_setCursor(2, 1);
-  LCD_writeString("by @mnane34");
+  LCD_writeString("by mnane34");
 
   /* USER CODE END 2 */
 

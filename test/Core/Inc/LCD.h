@@ -80,10 +80,9 @@ void LCD_clear();
 void LCD_CMD(unsigned char cmd);
 void LCD_DATA(unsigned char data);
 void LCD_InitStruct(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
-					volatile GPIO_TypeDef* D5_GPIO, volatile uint16_t D5_PIN,
-					volatile GPIO_TypeDef* D6_GPIO, volatile uint16_t D6_PIN,
-					volatile GPIO_TypeDef* D7_GPIO, volatile uint16_t D7_PIN,
-					volatile GPIO_TypeDef* EN_GPIO, volatile uint16_t EN_PIN,
-					volatile GPIO_TypeDef* RS_GPIO, volatile uint16_t RS_PIN);
-
+									volatile GPIO_TypeDef* D5_GPIO, volatile uint16_t D5_PIN,
+									volatile GPIO_TypeDef* D6_GPIO, volatile uint16_t D6_PIN,
+									volatile GPIO_TypeDef* D7_GPIO, volatile uint16_t D7_PIN,
+									volatile GPIO_TypeDef* EN_GPIO, volatile uint16_t EN_PIN,
+									volatile GPIO_TypeDef* RS_GPIO, volatile uint16_t RS_PIN);
 #endif

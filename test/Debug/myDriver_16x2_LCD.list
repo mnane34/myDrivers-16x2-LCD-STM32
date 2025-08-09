@@ -1433,7 +1433,7 @@ int main(void)
  8000c84:	2101      	movs	r1, #1
  8000c86:	2002      	movs	r0, #2
  8000c88:	f7ff fe64 	bl	8000954 <LCD_setCursor>
-  LCD_writeString("by @mnane34");
+  LCD_writeString("by mnane34");
  8000c8c:	4807      	ldr	r0, [pc, #28]	@ (8000cac <main+0xcc>)
  8000c8e:	f7ff ff8b 	bl	8000ba8 <LCD_writeString>
 
