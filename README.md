@@ -66,7 +66,7 @@ Positive terminal for the LCD’s backlight LED, typically connected to +5V.
 
 Negative terminal for the LCD’s backlight LED, typically connected to GND.
 
-![Shematic](images/shematic.JPG)
+![Shematic](images/init_function.png)
 
 In this application, the STM32 Nucleo F446RE development board was used. You can refer to the above wiring diagram.
 
