@@ -62,8 +62,16 @@ Usually, 4-bit mode is used to save pins, utilizing only D4 to D7.
 
 Positive terminal for the LCD’s backlight LED, typically connected to +5V.
 
-<h4> K - LED Cathode (Pin 16)
+<h4> K - LED Cathode (Pin 16) </h4>
 
 Negative terminal for the LCD’s backlight LED, typically connected to GND.
 
 ![Shematic](images/shematic.JPG)
+
+In this application, the STM32 Nucleo F446RE development board was used. You can refer to the above wiring diagram.
+
+# 🚀 Code Explanation
+
+![Shematic](images/init_function.JPG)
+
+This function configures the required pins for a 16x2 LCD to work with the STM32 and initializes the LCD in 4-bit mode according to its datasheet.
