@@ -91,3 +91,13 @@ These functions handle displaying text on the LCD. LCD_writeString() sends a ful
 ![Shematic](images/shift_function.png)
 
 These functions allow shifting the entire LCD display content horizontally; LCD_shiftLeft() moves the content to the left, while LCD_shiftRight() moves it to the right by sending the appropriate control commands to the LCD.
+
+## 🎉 Thank You for Reviewing!
+
+Thank you for taking the time to check out this project.
+
+Feel free to follow me on these platforms for more updates and projects:
+
+(*) YouTube: @mnane34
+
+(*) LinkedIn: Mertcan Nane
