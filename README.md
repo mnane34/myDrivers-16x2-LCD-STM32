@@ -72,8 +72,7 @@ In this application, the STM32 Nucleo F446RE development board was used. You can
 
 # 🚀 Code Explanation
 
-<pre><code class="language-c">
-void LCD_InitStruct(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
+<pre><code class="language-c">void LCD_InitStruct(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
                     volatile GPIO_TypeDef* D5_GPIO, volatile uint16_t D5_PIN,
                     volatile GPIO_TypeDef* D6_GPIO, volatile uint16_t D6_PIN,
                     volatile GPIO_TypeDef* D7_GPIO, volatile uint16_t D7_PIN,
@@ -83,31 +82,47 @@ void LCD_InitStruct(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
 
 This function configures the required pins for a 16x2 LCD to work with the STM32 and initializes the LCD in 4-bit mode according to its datasheet.
 
-<pre><code class="language-c">
-void LCD_clear();
+<pre><code class="language-c">void LCD_clear();
 </code></pre>
 
 This function sends the necessary commands to clear all characters from the LCD screen.
 
-<pre><code class="language-c">
-void LCD_setCursor(unsigned char row, unsigned char column);
+<pre><code class="language-c">void LCD_setCursor(unsigned char row, unsigned char column);
 </code></pre>
 
 This function positions the LCD cursor to the specified row and column based on the LCD datasheet
 
-<pre><code class="language-c">
-void LCD_writeString(char *str);
+<pre><code class="language-c">void LCD_writeString(char *str);
 void LCD_writeChar(char data);
 </code></pre>
 
 These functions handle displaying text on the LCD. LCD_writeString() sends a full string character-by-character, while LCD_writeChar() sends each individual character by splitting it into high and low 4-bit parts and transmitting them with proper control signals.
 
-<pre><code class="language-c">
-void LCD_shiftRight();
+<pre><code class="language-c">void LCD_shiftRight();
 void LCD_shiftLeft();
 </code></pre>
 
 These functions allow shifting the entire LCD display content horizontally; LCD_shiftLeft() moves the content to the left, while LCD_shiftRight() moves it to the right by sending the appropriate control commands to the LCD.
+
+# 🖥️ Test Result
+
+You can easily test the LCD using the following code snippet
+
+<pre><code class="language-c"> LCD_InitStruct(GPIOB, GPIO_PIN_15,
+               GPIOB, GPIO_PIN_1,
+               GPIOB, GPIO_PIN_2,
+               GPIOB, GPIO_PIN_12,
+               GPIOB, GPIO_PIN_14,
+               GPIOB, GPIO_PIN_13);
+LCD_clear();
+LCD_setCursor(1, 1);
+LCD_writeString("LCD Driver v1.0");
+DELAY_MS(1);
+LCD_setCursor(2, 1);
+LCD_writeString("by mnane34");
+</code></pre>
+
+![Shematic](images/test.JPG)
 
 ## 🎉 Thank You for Reviewing!
 
