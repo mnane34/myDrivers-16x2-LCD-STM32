@@ -108,7 +108,7 @@ These functions allow shifting the entire LCD display content horizontally; LCD_
 
 You can easily test the LCD using the following code snippet
 
-<pre><code class="language-c"> LCD_InitStruct(GPIOB, GPIO_PIN_15,
+<pre><code class="language-c">LCD_InitStruct(GPIOB, GPIO_PIN_15,
                GPIOB, GPIO_PIN_1,
                GPIOB, GPIO_PIN_2,
                GPIOB, GPIO_PIN_12,
