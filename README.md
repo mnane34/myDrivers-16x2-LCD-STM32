@@ -72,7 +72,7 @@ In this application, the STM32 Nucleo F446RE development board was used. You can
 
 # 🚀 Code Explanation
 
-![Shematic](images/init_function.JPG)
+![Shematic](images/init_function.PNG)
 
 This function configures the required pins for a 16x2 LCD to work with the STM32 and initializes the LCD in 4-bit mode according to its datasheet.
 
