@@ -14,7 +14,7 @@ Typically, you initialize the LCD in your code, configure it for the desired dis
 
 - VSS (Pin 1) 
 
-Ground connection (GND). It serves as the reference voltage for the circuit.
+<small> Ground connection (GND). It serves as the reference voltage for the circuit.</small>
 
 - VDD (Pin 2) 
 
