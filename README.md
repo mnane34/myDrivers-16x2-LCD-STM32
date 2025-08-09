@@ -9,3 +9,7 @@ A Liquid Crystal Display (LCD) is an electronic visual display that uses the lig
 Using an LCD with a microcontroller involves connecting the display’s data and control pins to the microcontroller’s GPIO pins, then programming the microcontroller to send commands and data to the LCD. 
 
 Typically, you initialize the LCD in your code, configure it for the desired display mode (such as 16x2 characters), and then write text or custom characters to the screen. This process allows the microcontroller to visually present information, making debugging and user interaction easier.
+
+# 🚀 Electrical Diagram
+
+![Alternatif Metin](images/shematic.JPG)
