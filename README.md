@@ -83,7 +83,7 @@ void LCD_InitStruct(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
 
 This function configures the required pins for a 16x2 LCD to work with the STM32 and initializes the LCD in 4-bit mode according to its datasheet.
 
-![Shematic](images/clear_function.png)
+void LCD_clear();
 
 This function sends the necessary commands to clear all characters from the LCD screen.
 
