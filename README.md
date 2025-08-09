@@ -96,8 +96,8 @@ These functions allow shifting the entire LCD display content horizontally; LCD_
 
 Thank you for taking the time to check out this project.
 
-Feel free to follow me on these platforms for more updates and projects:
+Feel free to follow me on these platforms for more updates and projects
 
--YouTube: @mnane34
+- YouTube: @mnane34
 
--LinkedIn: Mertcan Nane
+- LinkedIn: Mertcan Nane
