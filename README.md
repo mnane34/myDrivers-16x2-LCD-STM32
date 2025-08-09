@@ -75,3 +75,19 @@ In this application, the STM32 Nucleo F446RE development board was used. You can
 ![Shematic](images/init_function.JPG)
 
 This function configures the required pins for a 16x2 LCD to work with the STM32 and initializes the LCD in 4-bit mode according to its datasheet.
+
+![Shematic](images/clear_function.JPG)
+
+This function sends the necessary commands to clear all characters from the LCD screen.
+
+![Shematic](images/set_cursor_function.JPG)
+
+This function positions the LCD cursor to the specified row and column based on the LCD datasheet
+
+![Shematic](images/write_function.JPG)
+
+These functions handle displaying text on the LCD. LCD_writeString() sends a full string character-by-character, while LCD_writeChar() sends each individual character by splitting it into high and low 4-bit parts and transmitting them with proper control signals.
+
+![Shematic](images/shift_function.JPG)
+
+These functions allow shifting the entire LCD display content horizontally; LCD_shiftLeft() moves the content to the left, while LCD_shiftRight() moves it to the right by sending the appropriate control commands to the LCD.
