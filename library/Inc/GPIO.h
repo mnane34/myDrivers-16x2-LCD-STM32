@@ -1,6 +1,6 @@
 /**
- * @file    LCD.h
- * @brief   16x2 Liquid Crystal Display Driver for STM32
+ * @file    GPIO.h
+ * @brief   Base Direct Register Access to Control GPIO Pins for STM32
  * @author  Mertcan NANE
  * @date    2025-08-09
  * @version 1.0
