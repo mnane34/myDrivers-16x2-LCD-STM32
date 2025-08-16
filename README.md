@@ -72,31 +72,7 @@ In this application, the STM32 Nucleo F446RE development board was used. You can
 
 # 🚀 Code Explanation
 
-<pre><code class="language-c">#include "main.h"
-#include "LCD.h"
-
-int main(void){
-
-   HAL_Init();
-   SystemClock_Config();
-   MX_GPIO_Init();
-   LCD_InitStruct(GPIOB, GPIO_PIN_15,
-		          GPIOB, GPIO_PIN_1,
-			       GPIOB, GPIO_PIN_2,
-			       GPIOB, GPIO_PIN_12,
-			       GPIOB, GPIO_PIN_14,
-			       GPIOB, GPIO_PIN_13);
-  LCD_clear();
-  LCD_setCursor(1, 1);
-  LCD_writeString("LCD Driver v1.0");
-  DELAY_MS(1);
-  LCD_setCursor(2, 1);
-  LCD_writeString("by mnane34");
-
-  while(1);
-}
-
-void LCD_InitStruct(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
+<pre><code class="language-c">void LCD_InitStruct(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
                     volatile GPIO_TypeDef* D5_GPIO, volatile uint16_t D5_PIN,
                     volatile GPIO_TypeDef* D6_GPIO, volatile uint16_t D6_PIN,
                     volatile GPIO_TypeDef* D7_GPIO, volatile uint16_t D7_PIN,
@@ -132,19 +108,29 @@ These functions allow shifting the entire LCD display content horizontally; LCD_
 
 You can easily test the LCD using the following code snippet
 
-<pre><code class="language-c">LCD_InitStruct(GPIOB, GPIO_PIN_15,
-               GPIOB, GPIO_PIN_1,
-               GPIOB, GPIO_PIN_2,
-               GPIOB, GPIO_PIN_12,
-               GPIOB, GPIO_PIN_14,
-               GPIOB, GPIO_PIN_13);
-LCD_clear();
-LCD_setCursor(1, 1);
-LCD_writeString("LCD Driver v1.0");
-DELAY_MS(1);
-LCD_setCursor(2, 1);
-LCD_writeString("by mnane34");
-</code></pre>
+#include "main.h"
+#include "LCD.h"
+
+int main(void){
+
+   HAL_Init();
+   SystemClock_Config();
+   MX_GPIO_Init();
+   LCD_InitStruct(GPIOB, GPIO_PIN_15,
+		          GPIOB, GPIO_PIN_1,
+			      GPIOB, GPIO_PIN_2,
+			      GPIOB, GPIO_PIN_12,
+			      GPIOB, GPIO_PIN_14,
+			      GPIOB, GPIO_PIN_13);
+  LCD_clear();
+  LCD_setCursor(1, 1);
+  LCD_writeString("LCD Driver v1.0");
+  DELAY_MS(1);
+  LCD_setCursor(2, 1);
+  LCD_writeString("by mnane34");
+
+  while(1);
+}
 
 ![test](images/test.jpg)
 
