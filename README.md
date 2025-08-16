@@ -82,10 +82,10 @@ int main(void){
    MX_GPIO_Init();
    LCD_InitStruct(GPIOB, GPIO_PIN_15,
 		          GPIOB, GPIO_PIN_1,
-			  GPIOB, GPIO_PIN_2,
-			  GPIOB, GPIO_PIN_12,
-			  GPIOB, GPIO_PIN_14,
-			  GPIOB, GPIO_PIN_13);
+			       GPIOB, GPIO_PIN_2,
+			       GPIOB, GPIO_PIN_12,
+			       GPIOB, GPIO_PIN_14,
+			       GPIOB, GPIO_PIN_13);
   LCD_clear();
   LCD_setCursor(1, 1);
   LCD_writeString("LCD Driver v1.0");
