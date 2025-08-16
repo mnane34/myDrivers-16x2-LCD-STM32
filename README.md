@@ -108,7 +108,7 @@ These functions allow shifting the entire LCD display content horizontally; LCD_
 
 You can easily test the LCD using the following code snippet
 
-#include "main.h"
+<pre><code class="language-c">#include "main.h"
 #include "LCD.h"
 
 int main(void){
@@ -131,6 +131,7 @@ int main(void){
 
   while(1);
 }
+</code></pre>
 
 ![test](images/test.jpg)
 
