@@ -19,11 +19,9 @@ Ground connection (GND). It serves as the reference voltage for the circuit.
 Power supply pin, typically connected to +5V.
 
 - **VO (Pin 3)**<br>
-&nbsp;&nbsp;&nbsp;Contrast adjustment pin. Usually connected to the wiper of a potentiometer.<br>
-
-&nbsp;&nbsp;&nbsp;The other ends of the potentiometer connect to +5V and GND.<br>
-
-&nbsp;&nbsp;&nbsp;This pin allows you to adjust the display contrast for optimal visibility.
+Contrast adjustment pin. Usually connected to the wiper of a potentiometer
+The other ends of the potentiometer connect to +5V and GND.
+This pin allows you to adjust the display contrast for optimal visibility.
 
 - **RS - Register Select (Pin 4)**<br> 
 Determines the type of data sent to the LCD.
