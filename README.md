@@ -29,9 +29,9 @@ RS = 0: Instruction/command register,
 RS = 1: Data register
 
 - **RW - Read/Write (Pin 5)**<br> 
-Selects the read or write mode.
-RW = 0: Write mode,
-RW = 1: Read mode
+Selects the read or write mode.<br>
+RW = 0: Write mode,<br>
+RW = 1: Read mode<br>
 In most applications, RW is tied to GND for write-only operation.
 
 - **E - Enable (Pin 6)**<br> 
