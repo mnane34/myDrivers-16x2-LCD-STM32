@@ -19,18 +19,18 @@ Ground connection (GND). It serves as the reference voltage for the circuit.
 Power supply pin, typically connected to +5V.
 
 - **VO (Pin 3)**<br>
-Contrast adjustment pin. Usually connected to the wiper of a potentiometer.
-The other ends of the potentiometer connect to +5V and GND.
+Contrast adjustment pin. Usually connected to the wiper of a potentiometer.<br>
+The other ends of the potentiometer connect to +5V and GND.<br>
 This pin allows you to adjust the display contrast for optimal visibility.
 
 - **RS - Register Select (Pin 4)**<br> 
-Determines the type of data sent to the LCD.
-RS = 0: Instruction/command register,
-RS = 1: Data register
+Determines the type of data sent to the LCD.<br>
+RS = 0: Instruction/command register<br>
+RS = 1: Data register<br>
 
 - **RW - Read/Write (Pin 5)**<br> 
 Selects the read or write mode.<br>
-RW = 0: Write mode,<br>
+RW = 0: Write mode<br>
 RW = 1: Read mode<br>
 In most applications, RW is tied to GND for write-only operation.
 
@@ -39,7 +39,7 @@ Enables data read/write operations.
 A high-to-low transition on this pin triggers the LCD to latch data from the data pins.
 
 - **D0 - D7 (Pins 7 to 14)**<br> 
-8-bit data bus lines used to send commands and data to the LCD.
+8-bit data bus lines used to send commands and data to the LCD.<br>
 Usually, 4-bit mode is used to save pins, utilizing only D4 to D7.
 
 - **A - LED Anode (Pin 15)**<br> 
