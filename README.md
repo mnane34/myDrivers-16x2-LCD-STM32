@@ -54,7 +54,7 @@ In this application, the STM32 Nucleo F446RE development board was used. You can
 
 # 🚀 Code Explanation
 
-<pre><code class="language-c">void LCD_InitStruct(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
+<pre><code class="language-c">void LCD_init(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
                     volatile GPIO_TypeDef* D5_GPIO, volatile uint16_t D5_PIN,
                     volatile GPIO_TypeDef* D6_GPIO, volatile uint16_t D6_PIN,
                     volatile GPIO_TypeDef* D7_GPIO, volatile uint16_t D7_PIN,
@@ -98,7 +98,7 @@ int main(void){
    HAL_Init();
    SystemClock_Config();
    MX_GPIO_Init();
-   LCD_InitStruct(GPIOB, GPIO_PIN_15,
+   LCD_init(GPIOB, GPIO_PIN_15,
 		          GPIOB, GPIO_PIN_1,
 			      GPIOB, GPIO_PIN_2,
 			      GPIOB, GPIO_PIN_12,

@@ -87,7 +87,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  LCD_InitStruct(GPIOB, GPIO_PIN_15,
+  LCD_init(GPIOB, GPIO_PIN_15,
 		         GPIOB, GPIO_PIN_1,
 				 GPIOB, GPIO_PIN_2,
 				 GPIOB, GPIO_PIN_12,
