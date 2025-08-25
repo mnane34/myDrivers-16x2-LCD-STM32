@@ -54,7 +54,7 @@ In this application, the STM32 Nucleo F446RE development board was used. You can
 
 # 🚀 Code Explanation
 
-<pre><code class="language-c">void LCD_initGPIO_TypeDef* D4_GPIO, uint16_t D4_PIN,
+<pre><code class="language-c">void LCD_init(GPIO_TypeDef* D4_GPIO, uint16_t D4_PIN,
               GPIO_TypeDef* D5_GPIO, uint16_t D5_PIN,
               GPIO_TypeDef* D6_GPIO, uint16_t D6_PIN,
               GPIO_TypeDef* D7_GPIO, uint16_t D7_PIN,
