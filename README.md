@@ -54,12 +54,12 @@ In this application, the STM32 Nucleo F446RE development board was used. You can
 
 # 🚀 Code Explanation
 
-<pre><code class="language-c">void LCD_init(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
-              volatile GPIO_TypeDef* D5_GPIO, volatile uint16_t D5_PIN,
-              volatile GPIO_TypeDef* D6_GPIO, volatile uint16_t D6_PIN,
-              volatile GPIO_TypeDef* D7_GPIO, volatile uint16_t D7_PIN,
-              volatile GPIO_TypeDef* EN_GPIO, volatile uint16_t EN_PIN,
-              volatile GPIO_TypeDef* RS_GPIO, volatile uint16_t RS_PIN);
+<pre><code class="language-c">void LCD_initGPIO_TypeDef* D4_GPIO, uint16_t D4_PIN,
+              GPIO_TypeDef* D5_GPIO, uint16_t D5_PIN,
+              GPIO_TypeDef* D6_GPIO, uint16_t D6_PIN,
+              GPIO_TypeDef* D7_GPIO, uint16_t D7_PIN,
+              GPIO_TypeDef* EN_GPIO, uint16_t EN_PIN,
+              GPIO_TypeDef* RS_GPIO, uint16_t RS_PIN);
 </code></pre>
 
 This function configures the required pins for a 16x2 LCD to work with the STM32 and initializes the LCD in 4-bit mode according to its datasheet.
