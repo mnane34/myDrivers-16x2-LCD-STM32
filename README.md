@@ -55,11 +55,11 @@ In this application, the STM32 Nucleo F446RE development board was used. You can
 # 🚀 Code Explanation
 
 <pre><code class="language-c">void LCD_init(volatile GPIO_TypeDef* D4_GPIO, volatile uint16_t D4_PIN,
-                    volatile GPIO_TypeDef* D5_GPIO, volatile uint16_t D5_PIN,
-                    volatile GPIO_TypeDef* D6_GPIO, volatile uint16_t D6_PIN,
-                    volatile GPIO_TypeDef* D7_GPIO, volatile uint16_t D7_PIN,
-                    volatile GPIO_TypeDef* EN_GPIO, volatile uint16_t EN_PIN,
-                    volatile GPIO_TypeDef* RS_GPIO, volatile uint16_t RS_PIN);
+                volatile GPIO_TypeDef* D5_GPIO, volatile uint16_t D5_PIN,
+                volatile GPIO_TypeDef* D6_GPIO, volatile uint16_t D6_PIN,
+                volatile GPIO_TypeDef* D7_GPIO, volatile uint16_t D7_PIN,
+                volatile GPIO_TypeDef* EN_GPIO, volatile uint16_t EN_PIN,
+                volatile GPIO_TypeDef* RS_GPIO, volatile uint16_t RS_PIN);
 </code></pre>
 
 This function configures the required pins for a 16x2 LCD to work with the STM32 and initializes the LCD in 4-bit mode according to its datasheet.
@@ -99,11 +99,11 @@ int main(void){
    SystemClock_Config();
    MX_GPIO_Init();
    LCD_init(GPIOB, GPIO_PIN_15,
-		          GPIOB, GPIO_PIN_1,
-			      GPIOB, GPIO_PIN_2,
-			      GPIOB, GPIO_PIN_12,
-			      GPIOB, GPIO_PIN_14,
-			      GPIOB, GPIO_PIN_13);
+		           GPIOB, GPIO_PIN_1,
+			       GPIOB, GPIO_PIN_2,
+			       GPIOB, GPIO_PIN_12,
+			       GPIOB, GPIO_PIN_14,
+			       GPIOB, GPIO_PIN_13);
   LCD_clear();
   LCD_setCursor(1, 1);
   LCD_writeString("LCD Driver v1.0");
